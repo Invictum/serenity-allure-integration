@@ -52,7 +52,7 @@ public class Utils {
     public static Optional<Attach> attachment(File file) {
         try {
             String mime = URLConnection.guessContentTypeFromName(file.getName());
-            String extension = file.getName().split(".")[1];
+            String extension = file.getName().split("\\.")[1];
             byte[] data = Files.readAllBytes(file.toPath());
             return Optional.of(new Attach(file.getName(), mime, extension, data));
         } catch (IOException e) {
@@ -80,7 +80,7 @@ public class Utils {
      */
     public static List<Label> testLabels(TestOutcome testOutcome) {
         return new ArrayList<>(Arrays.asList(
-//                new Label().withName("parentSuite").withValue("parent-my-suite"),
+                /* Parent suite label is available for use */
                 new Label().withName("suite").withValue(testOutcome.getUserStory().getPath()),
                 new Label().withName("subSuite").withValue(testOutcome.getUserStory().getName()),
                 new Label().withName("host").withValue(getHostName()),
