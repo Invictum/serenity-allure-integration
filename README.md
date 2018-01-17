@@ -36,9 +36,3 @@ Report Portal integration uses 3 digit version format - x.y.z
 **y** - minor version update. Includes major Serenity and Allure core modules update. Backward compatibility for Serenity and Allure doesn't guaranteed.
 
 **x** - major version update. Dramatically changed integration architecture. Backward compatibility doesn't guaranteed. Actually increment of major version is not expected at all
-
-Limitations
--------------
-Integration does not support concurrency for parametrized Serenity tests execution.
-
-Report Portal launch finish timestamp is generated before Java VM shutdown. Overall launch duration will also include the time of Serenity report generation.
