@@ -1,4 +1,5 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6ef5bbc40e1f4afbbbd757bc8d2c98d7)](https://www.codacy.com/app/zim182/serenity-allure-integration?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Invictum/serenity-allure-integration&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/Invictum/serenity-allure-integration.svg?branch=develop)](https://travis-ci.org/Invictum/serenity-allure-integration)
 
 Serenity integration with Allure Reporting
 ==========================================
